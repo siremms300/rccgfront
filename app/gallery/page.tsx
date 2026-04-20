@@ -51,7 +51,7 @@ export default function GalleryPage() {
   const fetchAlbums = async () => {
     try {
       const response = await galleryAPI.getAll({ limit: 1000 });
-      const uniqueAlbums = [...new Set(response.data.galleries.map((g: GalleryImage) => g.album))];
+      const uniqueAlbums = [...new Set(response.data.galleries.map((g: GalleryImage) => g.album))] as string[];
       setAlbums(uniqueAlbums);
     } catch (error) {
       console.error('Error fetching albums:', error);
