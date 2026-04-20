@@ -73,7 +73,7 @@ export const departmentAPI = {
 
 // Gallery APIs
 export const galleryAPI = {
-  getAll: (params?: any) => api.get('/gallery', { params }),
+  getAll: <T = any>(params?: any) => api.get<T>('/gallery', { params }),
   getOne: (id: string) => api.get(`/gallery/${id}`),
   create: (data: any) => api.post('/gallery', data),
   update: (id: string, data: any) => api.put(`/gallery/${id}`, data),

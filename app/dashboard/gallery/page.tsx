@@ -55,7 +55,7 @@ export default function ManageGallery() {
 
   const fetchGalleries = async () => {
     try {
-      const response = await galleryAPI.getAll();
+      const response = await galleryAPI.getAll<{ galleries: GalleryImage[] }>();
       setGalleries(response.data.galleries);
     } catch (error) {
       toast.error('Failed to load gallery');
@@ -66,8 +66,8 @@ export default function ManageGallery() {
 
   const fetchAlbums = async () => {
     try {
-      const response = await galleryAPI.getAll({ limit: 1000 });
-      const uniqueAlbums = [...new Set(response.data.galleries.map((g: GalleryImage) => g.album))];
+      const response = await galleryAPI.getAll<{ galleries: GalleryImage[] }>({ limit: 1000 });
+      const uniqueAlbums = [...new Set(response.data.galleries.map((g) => g.album))] as string[];
       setAlbums(uniqueAlbums);
     } catch (error) {
       console.error('Error fetching albums:', error);

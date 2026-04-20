@@ -21,6 +21,20 @@ interface Group {
   color: string;
 }
 
+interface User {
+  _id: string;
+  name: string;
+  email: string;
+  role: string;
+  phone?: string;
+  province?: string;
+  zone?: string;
+  area?: string;
+  parish?: string;
+  isActive?: boolean;
+  isApproved?: boolean;
+}
+
 export default function ManageGroups() {
   const [groups, setGroups] = useState<Group[]>([]);
   const [users, setUsers] = useState<User[]>([]);

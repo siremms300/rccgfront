@@ -361,10 +361,16 @@ export default function ManageEvents() {
                     <td className="px-6 py-4">
                       <div className="flex items-center space-x-1">
                         {notificationSettings.sendEmail && (
-                          <Mail className="w-4 h-4 text-green-500" title="Email notifications enabled" />
+                          <Mail
+                            className="w-4 h-4 text-green-500"
+                            aria-label="Email notifications enabled"
+                          />
                         )}
                         {notificationSettings.sendReminder && (
-                          <Bell className="w-4 h-4 text-blue-500" title="Reminders enabled" />
+                          <Bell
+                            className="w-4 h-4 text-blue-500"
+                            aria-label="Reminders enabled"
+                          />
                         )}
                         <span className="text-xs text-gray-500 ml-1">
                           {notificationSettings.reminderTiming}h before
