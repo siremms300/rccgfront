@@ -18,7 +18,7 @@ const slides: Slide[] = [
   {
     id: 1,
     image: '/assets/hero1.jpg',
-    title: 'Welcome to Revelation Sanctuary',
+    title: 'Welcome to Digital Church',
     subtitle: 'Oasis of Excellence where lives are transformed through God\'s word',
     ctaText: 'Join Us Today',
     ctaLink: '/about',

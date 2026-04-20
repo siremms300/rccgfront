@@ -81,7 +81,7 @@ export default function Header() {
               <div className="relative w-10 h-10 md:w-12 md:h-12">
                 <Image
                   src="/assets/logo.png"
-                  alt="RCCG Revelation Sanctuary"
+                  alt="Digital Church"
                   fill
                   className="object-contain"
                   priority
@@ -89,7 +89,7 @@ export default function Header() {
               </div>
               <div>
                 <h1 className="font-bold text-base md:text-xl leading-tight text-gray-900">
-                  RCCG Revelation
+                  Digital Church
                 </h1>
                 <p className="text-xs text-gray-500 hidden sm:block">Oasis of Excellence</p>
               </div>

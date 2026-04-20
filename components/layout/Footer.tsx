@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* About */}
           <div>
-            <h3 className="text-xl font-bold mb-4">RCCG Revelation Sanctuary</h3>
+            <h3 className="text-xl font-bold mb-4">Digital Church</h3>
             <p className="text-gray-400 mb-4">
               An Oasis of Excellence - A place where lives are transformed through the power of God's word.
             </p>
@@ -54,7 +54,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-gray-400 mt-0.5" />
-                <span className="text-gray-400">Region 30 HQ, Kaduna, Nigeria</span>
+                <span className="text-gray-400">Digital Church HQ, Kaduna, Nigeria</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-gray-400" />
@@ -62,7 +62,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-gray-400" />
-                <span className="text-gray-400">info@rccgrevelation.org</span>
+                <span className="text-gray-400">info@digital.org</span>
               </li>
             </ul>
           </div>
@@ -98,7 +98,7 @@ export default function Footer() {
         
         <div className="border-t border-gray-800 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} RCCG Revelation Sanctuary. All rights reserved. | Region 30 HQ
+            &copy; {new Date().getFullYear()} Digital Church. All rights reserved. | 30 HQ
           </p>
           <p className="text-gray-500 text-xs mt-2">Oasis of Excellence</p>
         </div>
